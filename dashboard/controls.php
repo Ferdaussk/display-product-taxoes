@@ -1,0 +1,863 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) exit;
+add_settings_field(
+  'shpt-check-products-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-pagechack-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-position-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// Taxos
+add_settings_field(
+  'shpt-check-price-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-categories-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-tags-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-weight-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-dimensions-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-stock-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-sku-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-date-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-slug-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-featured-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-reviews-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-check-shippingclass-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+
+// Taxos label check
+add_settings_field(
+  'shpt-label-check-price-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-categories-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-tags-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-weight-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-dimensions-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-stock-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-sku-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-date-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-slug-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-featured-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-reviews-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-label-check-shippingclass-taxo-widget',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+
+// Popup controls
+// *** Price
+add_settings_field(
+  'shpt-price-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-price-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-price-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-price-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** categories
+add_settings_field(
+  'shpt-categories-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-categories-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-categories-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-categories-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** tags
+add_settings_field(
+  'shpt-tags-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-tags-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-tags-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-tags-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** weight
+add_settings_field(
+  'shpt-weight-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-weight-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-weight-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-weight-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** dimensions
+add_settings_field(
+  'shpt-dimensions-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-dimensions-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-dimensions-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-dimensions-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** stock
+add_settings_field(
+  'shpt-stock-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-stock-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-stock-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-stock-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** sku
+add_settings_field(
+  'shpt-sku-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-sku-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-sku-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-sku-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** date
+add_settings_field(
+  'shpt-date-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-date-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-date-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-date-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** slug
+add_settings_field(
+  'shpt-slug-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-slug-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-slug-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-slug-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** featured
+add_settings_field(
+  'shpt-featured-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-featured-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-featured-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-featured-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** reviews
+add_settings_field(
+  'shpt-reviews-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-reviews-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-reviews-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-reviews-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+// *** shippingclass
+add_settings_field(
+  'shpt-shippingclass-text',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-shippingclass-color',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-shippingclass-fontsize',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+add_settings_field(
+  'shpt-shippingclass-fontfamilly',
+  '',
+  'shpt_plugin_function_for_datas_callback',
+  'shpt-plugin-main-menu',
+  'shpt-plugin-switch-section'
+);
+
+// Register Settings all
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-products-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-pagechack-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-position-taxo-widget' 
+);
+// Taxos
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-price-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-categories-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-tags-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-weight-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-dimensions-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-stock-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-sku-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-date-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-slug-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-featured-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-reviews-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-check-shippingclass-taxo-widget' 
+);
+
+// Taxos label check
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-price-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-categories-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-tags-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-weight-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-dimensions-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-stock-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-sku-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-date-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-slug-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-featured-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-reviews-taxo-widget' 
+);
+register_setting( 
+  'shpt-plugin-settings', 
+  'shpt-label-check-shippingclass-taxo-widget' 
+);
+
+// Popup controls
+// *** Price
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-price-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-price-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-price-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-price-fontfamilly'
+);
+// *** categories
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-categories-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-categories-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-categories-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-categories-fontfamilly'
+);
+// *** tags
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-tags-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-tags-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-tags-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-tags-fontfamilly'
+);
+// *** weight
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-weight-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-weight-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-weight-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-weight-fontfamilly'
+);
+// *** dimensions
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-dimensions-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-dimensions-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-dimensions-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-dimensions-fontfamilly'
+);
+// *** stock
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-stock-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-stock-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-stock-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-stock-fontfamilly'
+);
+// *** sku
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-sku-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-sku-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-sku-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-sku-fontfamilly'
+);
+// *** date
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-date-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-date-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-date-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-date-fontfamilly'
+);
+// *** slug
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-slug-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-slug-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-slug-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-slug-fontfamilly'
+);
+// *** featured
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-featured-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-featured-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-featured-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-featured-fontfamilly'
+);
+// *** reviews
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-reviews-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-reviews-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-reviews-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-reviews-fontfamilly'
+);
+// *** shippingclass
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-shippingclass-text'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-shippingclass-color'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-shippingclass-fontsize'
+);
+register_setting(
+  'shpt-plugin-settings',
+  'shpt-shippingclass-fontfamilly'
+);

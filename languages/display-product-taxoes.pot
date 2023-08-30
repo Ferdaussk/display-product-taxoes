@@ -1,0 +1,350 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: AADisplay Product Taxoes\n"
+"POT-Creation-Date: 2023-08-30 17:55+0600\n"
+"PO-Revision-Date: 2023-08-30 17:55+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: display-product-taxoes.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: dashboard/dashboard-style.php:100
+msgid "BEST WP DEVELOPER"
+msgstr ""
+
+#: dashboard/dashboard-style.php:111
+msgid "Active"
+msgstr ""
+
+#: dashboard/dashboard-style.php:117
+msgid "Choose Page:"
+msgstr ""
+
+#: dashboard/dashboard-style.php:120
+msgid "Shop page:"
+msgstr ""
+
+#: dashboard/dashboard-style.php:125
+msgid "Single page:"
+msgstr ""
+
+#: dashboard/dashboard-style.php:130
+msgid "Both:"
+msgstr ""
+
+#: dashboard/dashboard-style.php:136
+msgid "Taxoes Position:"
+msgstr ""
+
+#: dashboard/dashboard-style.php:139
+msgid "Top Add To Cart"
+msgstr ""
+
+#: dashboard/dashboard-style.php:141
+msgid "Loop Item Title"
+msgstr ""
+
+#: dashboard/dashboard-style.php:143
+msgid "After Title"
+msgstr ""
+
+#: dashboard/dashboard-style.php:145
+msgid "After Item"
+msgstr ""
+
+#: dashboard/dashboard-style.php:147
+msgid "Style 5"
+msgstr ""
+
+#: dashboard/dashboard-style.php:154
+msgid "Taxoes"
+msgstr ""
+
+#: dashboard/dashboard-style.php:155
+msgid "Show Label"
+msgstr ""
+
+#: dashboard/dashboard-style.php:156
+msgid "Style"
+msgstr ""
+
+#: dashboard/dashboard-style.php:160
+msgid "Price: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:171 dashboard/dashboard-style.php:220
+#: dashboard/dashboard-style.php:269 dashboard/dashboard-style.php:318
+#: dashboard/dashboard-style.php:367 dashboard/dashboard-style.php:416
+#: dashboard/dashboard-style.php:465 dashboard/dashboard-style.php:514
+#: dashboard/dashboard-style.php:563 dashboard/dashboard-style.php:612
+#: dashboard/dashboard-style.php:661 dashboard/dashboard-style.php:710
+msgid "Go"
+msgstr ""
+
+#: dashboard/dashboard-style.php:176
+msgid "Price"
+msgstr ""
+
+#: dashboard/dashboard-style.php:179 dashboard/dashboard-style.php:228
+#: dashboard/dashboard-style.php:277 dashboard/dashboard-style.php:326
+#: dashboard/dashboard-style.php:375 dashboard/dashboard-style.php:424
+#: dashboard/dashboard-style.php:473 dashboard/dashboard-style.php:522
+#: dashboard/dashboard-style.php:571 dashboard/dashboard-style.php:620
+#: dashboard/dashboard-style.php:669 dashboard/dashboard-style.php:718
+msgid "Label "
+msgstr ""
+
+#: dashboard/dashboard-style.php:183 dashboard/dashboard-style.php:232
+#: dashboard/dashboard-style.php:281 dashboard/dashboard-style.php:330
+#: dashboard/dashboard-style.php:379 dashboard/dashboard-style.php:428
+#: dashboard/dashboard-style.php:477 dashboard/dashboard-style.php:526
+#: dashboard/dashboard-style.php:575 dashboard/dashboard-style.php:624
+#: dashboard/dashboard-style.php:673 dashboard/dashboard-style.php:722
+msgid "Color "
+msgstr ""
+
+#: dashboard/dashboard-style.php:187 dashboard/dashboard-style.php:236
+#: dashboard/dashboard-style.php:285 dashboard/dashboard-style.php:334
+#: dashboard/dashboard-style.php:383 dashboard/dashboard-style.php:432
+#: dashboard/dashboard-style.php:481 dashboard/dashboard-style.php:530
+#: dashboard/dashboard-style.php:579 dashboard/dashboard-style.php:628
+#: dashboard/dashboard-style.php:677 dashboard/dashboard-style.php:726
+msgid "Font Size "
+msgstr ""
+
+#: dashboard/dashboard-style.php:191 dashboard/dashboard-style.php:240
+#: dashboard/dashboard-style.php:289 dashboard/dashboard-style.php:338
+#: dashboard/dashboard-style.php:387 dashboard/dashboard-style.php:436
+#: dashboard/dashboard-style.php:485 dashboard/dashboard-style.php:534
+#: dashboard/dashboard-style.php:583 dashboard/dashboard-style.php:632
+#: dashboard/dashboard-style.php:681 dashboard/dashboard-style.php:730
+msgid "Font Familly "
+msgstr ""
+
+#: dashboard/dashboard-style.php:193 dashboard/dashboard-style.php:242
+#: dashboard/dashboard-style.php:291 dashboard/dashboard-style.php:340
+#: dashboard/dashboard-style.php:389 dashboard/dashboard-style.php:438
+#: dashboard/dashboard-style.php:487 dashboard/dashboard-style.php:536
+#: dashboard/dashboard-style.php:585 dashboard/dashboard-style.php:634
+#: dashboard/dashboard-style.php:683 dashboard/dashboard-style.php:732
+msgid "Roboto - Sans-serif"
+msgstr ""
+
+#: dashboard/dashboard-style.php:194 dashboard/dashboard-style.php:243
+#: dashboard/dashboard-style.php:292 dashboard/dashboard-style.php:341
+#: dashboard/dashboard-style.php:390 dashboard/dashboard-style.php:439
+#: dashboard/dashboard-style.php:488 dashboard/dashboard-style.php:537
+#: dashboard/dashboard-style.php:586 dashboard/dashboard-style.php:635
+#: dashboard/dashboard-style.php:684 dashboard/dashboard-style.php:733
+msgid "Open Sans - Sans-serif"
+msgstr ""
+
+#: dashboard/dashboard-style.php:195 dashboard/dashboard-style.php:244
+#: dashboard/dashboard-style.php:293 dashboard/dashboard-style.php:342
+#: dashboard/dashboard-style.php:391 dashboard/dashboard-style.php:440
+#: dashboard/dashboard-style.php:489 dashboard/dashboard-style.php:538
+#: dashboard/dashboard-style.php:587 dashboard/dashboard-style.php:636
+#: dashboard/dashboard-style.php:685 dashboard/dashboard-style.php:734
+msgid "Lato - Sans-serif"
+msgstr ""
+
+#: dashboard/dashboard-style.php:196 dashboard/dashboard-style.php:245
+#: dashboard/dashboard-style.php:294 dashboard/dashboard-style.php:343
+#: dashboard/dashboard-style.php:392 dashboard/dashboard-style.php:441
+#: dashboard/dashboard-style.php:490 dashboard/dashboard-style.php:539
+#: dashboard/dashboard-style.php:588 dashboard/dashboard-style.php:637
+#: dashboard/dashboard-style.php:686 dashboard/dashboard-style.php:735
+msgid "Montserrat - Sans-serif"
+msgstr ""
+
+#: dashboard/dashboard-style.php:197 dashboard/dashboard-style.php:246
+#: dashboard/dashboard-style.php:295 dashboard/dashboard-style.php:344
+#: dashboard/dashboard-style.php:393 dashboard/dashboard-style.php:442
+#: dashboard/dashboard-style.php:491 dashboard/dashboard-style.php:540
+#: dashboard/dashboard-style.php:589 dashboard/dashboard-style.php:638
+#: dashboard/dashboard-style.php:687 dashboard/dashboard-style.php:736
+msgid "Nunito - Sans-serif"
+msgstr ""
+
+#: dashboard/dashboard-style.php:200 dashboard/dashboard-style.php:249
+#: dashboard/dashboard-style.php:298 dashboard/dashboard-style.php:347
+#: dashboard/dashboard-style.php:396 dashboard/dashboard-style.php:445
+#: dashboard/dashboard-style.php:494 dashboard/dashboard-style.php:543
+#: dashboard/dashboard-style.php:592 dashboard/dashboard-style.php:641
+#: dashboard/dashboard-style.php:690 dashboard/dashboard-style.php:739
+msgid "Save it from dashboard header save button."
+msgstr ""
+
+#: dashboard/dashboard-style.php:209
+msgid "Categories: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:225
+msgid "Categories"
+msgstr ""
+
+#: dashboard/dashboard-style.php:258
+msgid "Tags: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:274
+msgid "Tags"
+msgstr ""
+
+#: dashboard/dashboard-style.php:307
+msgid "Weight: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:323
+msgid "Weight"
+msgstr ""
+
+#: dashboard/dashboard-style.php:356
+msgid "Dimentions: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:372
+msgid "Dimensions"
+msgstr ""
+
+#: dashboard/dashboard-style.php:405
+msgid "Stock: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:421
+msgid "Stock"
+msgstr ""
+
+#: dashboard/dashboard-style.php:454
+msgid "SKU: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:470
+msgid "SKU"
+msgstr ""
+
+#: dashboard/dashboard-style.php:503
+msgid "Date: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:519
+msgid "Date"
+msgstr ""
+
+#: dashboard/dashboard-style.php:552
+msgid "Slug: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:568
+msgid "Slug"
+msgstr ""
+
+#: dashboard/dashboard-style.php:601
+msgid "Featured: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:617
+msgid "Featured"
+msgstr ""
+
+#: dashboard/dashboard-style.php:650
+msgid "Reviews: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:666
+msgid "Reviews"
+msgstr ""
+
+#: dashboard/dashboard-style.php:699
+msgid "Shipping Class: "
+msgstr ""
+
+#: dashboard/dashboard-style.php:715
+msgid "Shipping Class"
+msgstr ""
+
+#: dashboard/requires-check.php:18 dashboard/requires-check.php:25
+msgid "BWD Elementor Addons"
+msgstr ""
+
+#: dashboard/requires-check.php:18
+msgid "requires WooCommerce to be activated."
+msgstr ""
+
+#: dashboard/requires-check.php:19
+msgid "Activate WooCommerce"
+msgstr ""
+
+#: dashboard/requires-check.php:25
+msgid "requires WooCommerce to be installed and activated."
+msgstr ""
+
+#: dashboard/requires-check.php:26
+msgid "Install WooCommerce"
+msgstr ""
+
+#: display-product-taxoes.php:43
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: display-product-taxoes.php:44
+msgid "Display Product Taxoes"
+msgstr ""
+
+#: display-product-taxoes.php:45
+msgid "PHP"
+msgstr ""
+
+#: display-product-taxoes.php:49
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: include.php:269
+msgid "Settings"
+msgstr ""
+
+#: public-inc/taxo-template.php:82
+msgid "Yes"
+msgstr ""
+
+#: public-inc/taxo-template.php:82
+msgid "No"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "AADisplay Product Taxoes"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://bestwpdeveloper.com/display-product-taxoes/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The Display Product Taxoes plugin enhances your WooCommerce-powered online "
+"store by seamlessly integrating product taxonomy data into both the shop "
+"page and individual product pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Best WP Developer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://bestwpdeveloper.com/"
+msgstr ""

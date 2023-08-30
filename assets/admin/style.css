@@ -1,0 +1,310 @@
+a{
+  text-decoration: none;
+}
+#wpcontent{
+  background-color: white;
+}
+.admin-panel {
+padding: 20px;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #ccc;
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+
+.header h1 {
+font-size: 30px;
+margin: 0;
+height: 22px;
+background: linear-gradient(to right, #034494, #d20045, #ff9c4b);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.wp-core-ui .button-primary {
+padding: 8px 12px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+p.submit{
+  margin-top: 0;
+}
+.submit{
+  padding: 0;
+}
+.section, .secound-clm{
+display: flex;
+}
+.checker-wrap {
+width: 50%;
+}
+.clmn-wrap {
+width: 50%;
+border: 1px solid #ccc;
+padding: 20px;
+}
+
+.toggle-container,
+.select-container {
+margin-bottom: 20px;
+}
+
+.toggle-label {
+display: block;
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+.toggle-switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.toggle-switch input {
+display: none;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: 0.4s;
+border-radius: 34px;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: 0.4s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: #007bff;
+}
+
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+
+.select-container label {
+display: block;
+margin: 20px 0px 10px 0px;
+font-weight: 700;
+}
+.choose-page {
+display: block;
+margin: 20px 0px 10px 0px;
+font-weight: 700;
+}
+
+select {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.list-container {
+display: flex;
+}
+
+.list-item {
+flex: 1;
+margin-right: 10px;
+}
+
+.list-item label {
+display: block;
+margin-bottom: 5px;
+}
+.checker-wrap.checker-clmn-two {
+border-left: 1px solid;
+padding-left: 30px;
+}
+.taxoes-check-label {
+font-size: 20px;
+font-weight: 600;
+}
+.popup-container {
+margin-top: 4px;
+}
+.checker-container {
+padding: 8px 0px;
+position: relative;
+align-items: center;
+}
+span.popup-btn {
+padding: 5px 10px;
+border-radius: 4px;
+cursor: pointer;
+background-color: #898989;
+color: white;
+}
+
+/* Table */
+.custom-table {
+border-collapse: collapse;
+width: 100%;
+border: 1px solid #ccc;
+}
+
+.custom-table th,
+.custom-table td {
+border: 1px solid #ccc;
+padding: 8px;
+text-align: center;
+}
+
+.custom-table th {
+background-color: #f2f2f2;
+}
+td.taxo-align {
+  display: flex;
+}
+.taxo-align label {
+  width: 50%;
+}
+/* For popup css */
+.popup-container {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+align-items: center;
+justify-content: center;
+z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  max-width: 400px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  top: 40%;
+}
+
+.popup-close {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+font-size: 24px;
+color: #333;
+}
+
+/* ///////////////////// */
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+}
+
+.popup-close:hover {
+  color: #333;
+}
+
+.popup-content h2 {
+  font-size: 29px;
+  margin-bottom: 30px;
+  font-family: emoji;
+  text-transform: uppercase;
+  height: 19px;
+  background: linear-gradient(to right, #034494, #d20045, #ff9c4b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shpt-controls {
+  margin-top: 15px;
+}
+
+.shpt-input {
+  margin-bottom: 15px;
+}
+
+.shpt-input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.shpt-input input[type="text"],
+.shpt-input input[type="color"],
+.shpt-input select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+}
+
+.shpt-input p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.shpt-input select {
+  height: 50px;
+}
+
+/* Style the select dropdown arrow */
+.shpt-input select::-ms-expand {
+  display: none;
+}
+
+.shpt-input select:focus {
+  border-color: #3498db;
+}
+
+/* Customize select dropdown appearance */
+.shpt-input select option {
+  font-family: inherit;
+}
+.shpt-controls p {
+  color: #f78686;
+}
