@@ -275,14 +275,6 @@ class ClassShopProdTax {
 	public function __construct() {
 		add_filter( 'plugin_action_links', [$this,'shpt_settings_plugin_action_link'], 10, 2 );
 		add_filter( 'whitelist_options', [$this,'shpt_plugin_settings_to_whitelist'] );
-        /**
-         * woocommerce_shop_loop_item_title // For shop page
-         * woocommerce_before_shop_loop_item_title // For shop page
-         * woocommerce_after_shop_loop_item_title // For shop page
-         * woocommerce_before_add_to_cart_button // For single page
-         * woocommerce_after_add_to_cart_button // For single page
-         * woocommerce_after_shop_loop_item // For shop page
-         */
 		if (isset($_GET['page']) && $_GET['page'] === 'get-display-product-taxoes') {
 		    add_action('admin_enqueue_scripts', [$this, 'shpt_all_assets_for_the_admin']);
         }
