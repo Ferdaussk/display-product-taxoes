@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: AADisplay Product Taxoes
+ * Plugin Name: Display Product Taxoes
  * Description: The Display Product Taxoes plugin enhances your WooCommerce-powered online store by seamlessly integrating product taxonomy data into both the shop page and individual product pages.
  * Plugin URI: https://bestwpdeveloper.com/display-product-taxoes/
  * Version: 1.0
