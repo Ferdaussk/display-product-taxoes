@@ -1,863 +1,863 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 add_settings_field(
-  'shpt-check-products-taxo-widget',
+  'dyptt-check-products-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-pagechack-taxo-widget',
+  'dyptt-check-pagechack-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-position-taxo-widget',
+  'dyptt-check-position-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // Taxos
 add_settings_field(
-  'shpt-check-price-taxo-widget',
+  'dyptt-check-price-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-categories-taxo-widget',
+  'dyptt-check-categories-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-tags-taxo-widget',
+  'dyptt-check-tags-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-weight-taxo-widget',
+  'dyptt-check-weight-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-dimensions-taxo-widget',
+  'dyptt-check-dimensions-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-stock-taxo-widget',
+  'dyptt-check-stock-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-sku-taxo-widget',
+  'dyptt-check-sku-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-date-taxo-widget',
+  'dyptt-check-date-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-slug-taxo-widget',
+  'dyptt-check-slug-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-featured-taxo-widget',
+  'dyptt-check-featured-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-reviews-taxo-widget',
+  'dyptt-check-reviews-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-check-shippingclass-taxo-widget',
+  'dyptt-check-shippingclass-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 
 // Taxos label check
 add_settings_field(
-  'shpt-label-check-price-taxo-widget',
+  'dyptt-label-check-price-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-categories-taxo-widget',
+  'dyptt-label-check-categories-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-tags-taxo-widget',
+  'dyptt-label-check-tags-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-weight-taxo-widget',
+  'dyptt-label-check-weight-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-dimensions-taxo-widget',
+  'dyptt-label-check-dimensions-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-stock-taxo-widget',
+  'dyptt-label-check-stock-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-sku-taxo-widget',
+  'dyptt-label-check-sku-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-date-taxo-widget',
+  'dyptt-label-check-date-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-slug-taxo-widget',
+  'dyptt-label-check-slug-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-featured-taxo-widget',
+  'dyptt-label-check-featured-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-reviews-taxo-widget',
+  'dyptt-label-check-reviews-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-label-check-shippingclass-taxo-widget',
+  'dyptt-label-check-shippingclass-taxo-widget',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 
 // Popup controls
 // *** Price
 add_settings_field(
-  'shpt-price-text',
+  'dyptt-price-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-price-color',
+  'dyptt-price-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-price-fontsize',
+  'dyptt-price-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-price-fontfamilly',
+  'dyptt-price-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** categories
 add_settings_field(
-  'shpt-categories-text',
+  'dyptt-categories-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-categories-color',
+  'dyptt-categories-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-categories-fontsize',
+  'dyptt-categories-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-categories-fontfamilly',
+  'dyptt-categories-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** tags
 add_settings_field(
-  'shpt-tags-text',
+  'dyptt-tags-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-tags-color',
+  'dyptt-tags-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-tags-fontsize',
+  'dyptt-tags-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-tags-fontfamilly',
+  'dyptt-tags-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** weight
 add_settings_field(
-  'shpt-weight-text',
+  'dyptt-weight-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-weight-color',
+  'dyptt-weight-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-weight-fontsize',
+  'dyptt-weight-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-weight-fontfamilly',
+  'dyptt-weight-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** dimensions
 add_settings_field(
-  'shpt-dimensions-text',
+  'dyptt-dimensions-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-dimensions-color',
+  'dyptt-dimensions-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-dimensions-fontsize',
+  'dyptt-dimensions-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-dimensions-fontfamilly',
+  'dyptt-dimensions-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** stock
 add_settings_field(
-  'shpt-stock-text',
+  'dyptt-stock-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-stock-color',
+  'dyptt-stock-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-stock-fontsize',
+  'dyptt-stock-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-stock-fontfamilly',
+  'dyptt-stock-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** sku
 add_settings_field(
-  'shpt-sku-text',
+  'dyptt-sku-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-sku-color',
+  'dyptt-sku-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-sku-fontsize',
+  'dyptt-sku-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-sku-fontfamilly',
+  'dyptt-sku-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** date
 add_settings_field(
-  'shpt-date-text',
+  'dyptt-date-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-date-color',
+  'dyptt-date-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-date-fontsize',
+  'dyptt-date-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-date-fontfamilly',
+  'dyptt-date-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** slug
 add_settings_field(
-  'shpt-slug-text',
+  'dyptt-slug-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-slug-color',
+  'dyptt-slug-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-slug-fontsize',
+  'dyptt-slug-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-slug-fontfamilly',
+  'dyptt-slug-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** featured
 add_settings_field(
-  'shpt-featured-text',
+  'dyptt-featured-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-featured-color',
+  'dyptt-featured-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-featured-fontsize',
+  'dyptt-featured-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-featured-fontfamilly',
+  'dyptt-featured-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** reviews
 add_settings_field(
-  'shpt-reviews-text',
+  'dyptt-reviews-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-reviews-color',
+  'dyptt-reviews-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-reviews-fontsize',
+  'dyptt-reviews-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-reviews-fontfamilly',
+  'dyptt-reviews-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 // *** shippingclass
 add_settings_field(
-  'shpt-shippingclass-text',
+  'dyptt-shippingclass-text',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-shippingclass-color',
+  'dyptt-shippingclass-color',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-shippingclass-fontsize',
+  'dyptt-shippingclass-fontsize',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 add_settings_field(
-  'shpt-shippingclass-fontfamilly',
+  'dyptt-shippingclass-fontfamilly',
   '',
-  'shpt_plugin_function_for_datas_callback',
-  'shpt-plugin-main-menu',
-  'shpt-plugin-switch-section'
+  'dyptt_plugin_function_for_datas_callback',
+  'dyptt-plugin-main-menu',
+  'dyptt-plugin-switch-section'
 );
 
 // Register Settings all
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-products-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-products-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-pagechack-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-pagechack-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-position-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-position-taxo-widget' 
 );
 // Taxos
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-price-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-price-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-categories-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-categories-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-tags-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-tags-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-weight-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-weight-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-dimensions-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-dimensions-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-stock-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-stock-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-sku-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-sku-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-date-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-date-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-slug-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-slug-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-featured-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-featured-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-reviews-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-reviews-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-check-shippingclass-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-check-shippingclass-taxo-widget' 
 );
 
 // Taxos label check
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-price-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-price-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-categories-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-categories-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-tags-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-tags-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-weight-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-weight-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-dimensions-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-dimensions-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-stock-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-stock-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-sku-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-sku-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-date-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-date-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-slug-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-slug-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-featured-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-featured-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-reviews-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-reviews-taxo-widget' 
 );
 register_setting( 
-  'shpt-plugin-settings', 
-  'shpt-label-check-shippingclass-taxo-widget' 
+  'dyptt-plugin-settings', 
+  'dyptt-label-check-shippingclass-taxo-widget' 
 );
 
 // Popup controls
 // *** Price
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-price-text'
+  'dyptt-plugin-settings',
+  'dyptt-price-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-price-color'
+  'dyptt-plugin-settings',
+  'dyptt-price-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-price-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-price-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-price-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-price-fontfamilly'
 );
 // *** categories
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-categories-text'
+  'dyptt-plugin-settings',
+  'dyptt-categories-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-categories-color'
+  'dyptt-plugin-settings',
+  'dyptt-categories-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-categories-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-categories-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-categories-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-categories-fontfamilly'
 );
 // *** tags
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-tags-text'
+  'dyptt-plugin-settings',
+  'dyptt-tags-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-tags-color'
+  'dyptt-plugin-settings',
+  'dyptt-tags-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-tags-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-tags-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-tags-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-tags-fontfamilly'
 );
 // *** weight
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-weight-text'
+  'dyptt-plugin-settings',
+  'dyptt-weight-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-weight-color'
+  'dyptt-plugin-settings',
+  'dyptt-weight-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-weight-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-weight-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-weight-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-weight-fontfamilly'
 );
 // *** dimensions
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-dimensions-text'
+  'dyptt-plugin-settings',
+  'dyptt-dimensions-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-dimensions-color'
+  'dyptt-plugin-settings',
+  'dyptt-dimensions-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-dimensions-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-dimensions-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-dimensions-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-dimensions-fontfamilly'
 );
 // *** stock
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-stock-text'
+  'dyptt-plugin-settings',
+  'dyptt-stock-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-stock-color'
+  'dyptt-plugin-settings',
+  'dyptt-stock-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-stock-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-stock-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-stock-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-stock-fontfamilly'
 );
 // *** sku
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-sku-text'
+  'dyptt-plugin-settings',
+  'dyptt-sku-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-sku-color'
+  'dyptt-plugin-settings',
+  'dyptt-sku-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-sku-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-sku-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-sku-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-sku-fontfamilly'
 );
 // *** date
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-date-text'
+  'dyptt-plugin-settings',
+  'dyptt-date-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-date-color'
+  'dyptt-plugin-settings',
+  'dyptt-date-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-date-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-date-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-date-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-date-fontfamilly'
 );
 // *** slug
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-slug-text'
+  'dyptt-plugin-settings',
+  'dyptt-slug-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-slug-color'
+  'dyptt-plugin-settings',
+  'dyptt-slug-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-slug-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-slug-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-slug-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-slug-fontfamilly'
 );
 // *** featured
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-featured-text'
+  'dyptt-plugin-settings',
+  'dyptt-featured-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-featured-color'
+  'dyptt-plugin-settings',
+  'dyptt-featured-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-featured-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-featured-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-featured-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-featured-fontfamilly'
 );
 // *** reviews
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-reviews-text'
+  'dyptt-plugin-settings',
+  'dyptt-reviews-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-reviews-color'
+  'dyptt-plugin-settings',
+  'dyptt-reviews-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-reviews-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-reviews-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-reviews-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-reviews-fontfamilly'
 );
 // *** shippingclass
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-shippingclass-text'
+  'dyptt-plugin-settings',
+  'dyptt-shippingclass-text'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-shippingclass-color'
+  'dyptt-plugin-settings',
+  'dyptt-shippingclass-color'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-shippingclass-fontsize'
+  'dyptt-plugin-settings',
+  'dyptt-shippingclass-fontsize'
 );
 register_setting(
-  'shpt-plugin-settings',
-  'shpt-shippingclass-fontfamilly'
+  'dyptt-plugin-settings',
+  'dyptt-shippingclass-fontfamilly'
 );

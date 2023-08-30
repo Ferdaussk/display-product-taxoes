@@ -14,19 +14,19 @@ final class FinalSHPTShop{
 	const MINIMUM_PHP_VERSION = '7.0';
 	public function __construct() {
 		// Load translation
-		add_action( 'shpt_init', array( $this, 'shpt_loaded_textdomain' ) );
-		// shpt_init Plugin
-		add_action( 'plugins_loaded', array( $this, 'shpt_init' ) );
+		add_action( 'dyptt_init', array( $this, 'dyptt_loaded_textdomain' ) );
+		// dyptt_init Plugin
+		add_action( 'plugins_loaded', array( $this, 'dyptt_init' ) );
 	}
 
-	public function shpt_loaded_textdomain() {
+	public function dyptt_loaded_textdomain() {
 		load_plugin_textdomain( 'display-product-taxoes', false, basename(dirname(__FILE__)).'/languages' );
 	}
 
-	public function shpt_init() {
+	public function dyptt_init() {
 		// Check for required PHP version
 		if ( version_compare( PHP_VERSION, self::MINIMUM_PHP_VERSION, '<' ) ) {
-			add_action( 'admin_notices', array( $this, 'shpt_admin_notice_minimum_php_version' ) );
+			add_action( 'admin_notices', array( $this, 'dyptt_admin_notice_minimum_php_version' ) );
 			return;
 		}
 
@@ -34,7 +34,7 @@ final class FinalSHPTShop{
 		require_once( 'include.php' );
 	}
 
-	public function shpt_admin_notice_minimum_php_version() {
+	public function dyptt_admin_notice_minimum_php_version() {
 		if ( isset( $_GET['activate'] ) ) {
 			unset( $_GET['activate'] );
 		}

@@ -13,18 +13,18 @@ class ClassShopProdTax {
 		return self::$_instance;
 	}
 
-	public function shpt_all_assets_for_the_admin(){
+	public function dyptt_all_assets_for_the_admin(){
 		$all_css_js_file = array(
-			'shpt-style' => array('shpt_path_define'=>SHPT_ASFSK_ASSETS_ADMIN_DIR_FILE . '/style.css'),
+			'dyptt-style' => array('dyptt_path_define'=>SHPT_ASFSK_ASSETS_ADMIN_DIR_FILE . '/style.css'),
 
-			'shpt-script' => array('shpt_path_define'=>SHPT_ASFSK_ASSETS_ADMIN_DIR_FILE . '/script.js'),
+			'dyptt-script' => array('dyptt_path_define'=>SHPT_ASFSK_ASSETS_ADMIN_DIR_FILE . '/script.js'),
 		);
 		foreach($all_css_js_file as $handle => $fileinfo){
-			wp_enqueue_style( $handle, $fileinfo['shpt_path_define'], null, '1.0', 'all');
-			wp_enqueue_script( $handle, $fileinfo['shpt_path_define'], ['jquery'], '1.0', true);
+			wp_enqueue_style( $handle, $fileinfo['dyptt_path_define'], null, '1.0', 'all');
+			wp_enqueue_script( $handle, $fileinfo['dyptt_path_define'], ['jquery'], '1.0', true);
 		}
 	}
-	public function shpt_admin_menu_test(){
+	public function dyptt_admin_menu_test(){
 		if(current_user_can('manage_options')){
 			add_submenu_page(
 				'woocommerce',
@@ -32,114 +32,114 @@ class ClassShopProdTax {
 				'Display Product Taxoes',
 				'manage_options',
 				'get-display-product-taxoes',
-				array($this, 'shpt_plugin_submenu_about_plugin_page'),
+				array($this, 'dyptt_plugin_submenu_about_plugin_page'),
                 10
 			);
 		}
-    add_action('admin_init', array($this, 'shpt_admin_controls'));
+    add_action('admin_init', array($this, 'dyptt_admin_controls'));
 	}
-    public function shpt_admin_controls() {
+    public function dyptt_admin_controls() {
         include 'dashboard/controls.php';
     }
 
-	public function shpt_plugin_submenu_about_plugin_page() {
+	public function dyptt_plugin_submenu_about_plugin_page() {
 		include 'dashboard/dashboard-style.php';
     }
 
-    public function shpt_plugin_function_for_datas_callback() {}
+    public function dyptt_plugin_function_for_datas_callback() {}
 
-    public function shpt_plugin_settings_to_whitelist( $options ) {
-      $options['shpt-plugin-settings'] = array(
-        'shpt-check-products-taxo-widget',
-        'shpt-check-pagechack-taxo-widget',
-        'shpt-check-position-taxo-widget',
+    public function dyptt_plugin_settings_to_whitelist( $options ) {
+      $options['dyptt-plugin-settings'] = array(
+        'dyptt-check-products-taxo-widget',
+        'dyptt-check-pagechack-taxo-widget',
+        'dyptt-check-position-taxo-widget',
         //   Taxos
-        'shpt-check-price-taxo-widget',
-        'shpt-check-categories-taxo-widget',
-        'shpt-check-tags-taxo-widget',
-        'shpt-check-weight-taxo-widget',
-        'shpt-check-dimensions-taxo-widget',
-        'shpt-check-stock-taxo-widget',
-        'shpt-check-sku-taxo-widget',
-        'shpt-check-date-taxo-widget',
-        'shpt-check-slug-taxo-widget',
-        'shpt-check-featured-taxo-widget',
-        'shpt-check-reviews-taxo-widget',
-        'shpt-check-shippingclass-taxo-widget',
+        'dyptt-check-price-taxo-widget',
+        'dyptt-check-categories-taxo-widget',
+        'dyptt-check-tags-taxo-widget',
+        'dyptt-check-weight-taxo-widget',
+        'dyptt-check-dimensions-taxo-widget',
+        'dyptt-check-stock-taxo-widget',
+        'dyptt-check-sku-taxo-widget',
+        'dyptt-check-date-taxo-widget',
+        'dyptt-check-slug-taxo-widget',
+        'dyptt-check-featured-taxo-widget',
+        'dyptt-check-reviews-taxo-widget',
+        'dyptt-check-shippingclass-taxo-widget',
         //   Taxos label check
-        'shpt-label-check-price-taxo-widget',
-        'shpt-label-check-categories-taxo-widget',
-        'shpt-label-check-tags-taxo-widget',
-        'shpt-label-check-weight-taxo-widget',
-        'shpt-label-check-dimensions-taxo-widget',
-        'shpt-label-check-stock-taxo-widget',
-        'shpt-label-check-sku-taxo-widget',
-        'shpt-label-check-date-taxo-widget',
-        'shpt-label-check-slug-taxo-widget',
-        'shpt-label-check-featured-taxo-widget',
-        'shpt-label-check-reviews-taxo-widget',
-        'shpt-label-check-shippingclass-taxo-widget',
+        'dyptt-label-check-price-taxo-widget',
+        'dyptt-label-check-categories-taxo-widget',
+        'dyptt-label-check-tags-taxo-widget',
+        'dyptt-label-check-weight-taxo-widget',
+        'dyptt-label-check-dimensions-taxo-widget',
+        'dyptt-label-check-stock-taxo-widget',
+        'dyptt-label-check-sku-taxo-widget',
+        'dyptt-label-check-date-taxo-widget',
+        'dyptt-label-check-slug-taxo-widget',
+        'dyptt-label-check-featured-taxo-widget',
+        'dyptt-label-check-reviews-taxo-widget',
+        'dyptt-label-check-shippingclass-taxo-widget',
         // Popup controls
         // *** Price
-        'shpt-price-text',
-        'shpt-price-color',
-        'shpt-price-fontsize',
-        'shpt-price-fontfamilly',
+        'dyptt-price-text',
+        'dyptt-price-color',
+        'dyptt-price-fontsize',
+        'dyptt-price-fontfamilly',
         // *** categories
-        'shpt-categories-text',
-        'shpt-categories-color',
-        'shpt-categories-fontsize',
-        'shpt-categories-fontfamilly',
+        'dyptt-categories-text',
+        'dyptt-categories-color',
+        'dyptt-categories-fontsize',
+        'dyptt-categories-fontfamilly',
         // *** tags
-        'shpt-tags-text',
-        'shpt-tags-color',
-        'shpt-tags-fontsize',
-        'shpt-tags-fontfamilly',
+        'dyptt-tags-text',
+        'dyptt-tags-color',
+        'dyptt-tags-fontsize',
+        'dyptt-tags-fontfamilly',
         // *** weight
-        'shpt-weight-text',
-        'shpt-weight-color',
-        'shpt-weight-fontsize',
-        'shpt-weight-fontfamilly',
+        'dyptt-weight-text',
+        'dyptt-weight-color',
+        'dyptt-weight-fontsize',
+        'dyptt-weight-fontfamilly',
         // *** dimensions
-        'shpt-dimensions-text',
-        'shpt-dimensions-color',
-        'shpt-dimensions-fontsize',
-        'shpt-dimensions-fontfamilly',
+        'dyptt-dimensions-text',
+        'dyptt-dimensions-color',
+        'dyptt-dimensions-fontsize',
+        'dyptt-dimensions-fontfamilly',
         // *** stock
-        'shpt-stock-text',
-        'shpt-stock-color',
-        'shpt-stock-fontsize',
-        'shpt-stock-fontfamilly',
+        'dyptt-stock-text',
+        'dyptt-stock-color',
+        'dyptt-stock-fontsize',
+        'dyptt-stock-fontfamilly',
         // *** sku
-        'shpt-sku-text',
-        'shpt-sku-color',
-        'shpt-sku-fontsize',
-        'shpt-sku-fontfamilly',
+        'dyptt-sku-text',
+        'dyptt-sku-color',
+        'dyptt-sku-fontsize',
+        'dyptt-sku-fontfamilly',
         // *** date
-        'shpt-date-text',
-        'shpt-date-color',
-        'shpt-date-fontsize',
-        'shpt-date-fontfamilly',
+        'dyptt-date-text',
+        'dyptt-date-color',
+        'dyptt-date-fontsize',
+        'dyptt-date-fontfamilly',
         // *** slug
-        'shpt-slug-text',
-        'shpt-slug-color',
-        'shpt-slug-fontsize',
-        'shpt-slug-fontfamilly',
+        'dyptt-slug-text',
+        'dyptt-slug-color',
+        'dyptt-slug-fontsize',
+        'dyptt-slug-fontfamilly',
         // *** featured
-        'shpt-featured-text',
-        'shpt-featured-color',
-        'shpt-featured-fontsize',
-        'shpt-featured-fontfamilly',
+        'dyptt-featured-text',
+        'dyptt-featured-color',
+        'dyptt-featured-fontsize',
+        'dyptt-featured-fontfamilly',
         // *** reviews
-        'shpt-reviews-text',
-        'shpt-reviews-color',
-        'shpt-reviews-fontsize',
-        'shpt-reviews-fontfamilly',
+        'dyptt-reviews-text',
+        'dyptt-reviews-color',
+        'dyptt-reviews-fontsize',
+        'dyptt-reviews-fontfamilly',
         // *** shippingclass
-        'shpt-shippingclass-text',
-        'shpt-shippingclass-color',
-        'shpt-shippingclass-fontsize',
-        'shpt-shippingclass-fontfamilly',
+        'dyptt-shippingclass-text',
+        'dyptt-shippingclass-color',
+        'dyptt-shippingclass-fontsize',
+        'dyptt-shippingclass-fontfamilly',
       );
       return $options;
     }
@@ -149,140 +149,140 @@ class ClassShopProdTax {
         include 'public-inc/taxo-template.php';
     }
 
-    public function shpt_taxoes_styles(){
+    public function dyptt_taxoes_styles(){
         // *** price
-        $shpt_price_color_value = get_option( 'shpt-price-color', 'black' );
-        $shpt_price_fontsize_value = get_option( 'shpt-price-fontsize');
-        $shpt_price_fontfamilly_value = get_option( 'shpt-price-fontfamilly', 'roboto' );
+        $dyptt_price_color_value = get_option( 'dyptt-price-color', 'black' );
+        $dyptt_price_fontsize_value = get_option( 'dyptt-price-fontsize');
+        $dyptt_price_fontfamilly_value = get_option( 'dyptt-price-fontfamilly', 'roboto' );
         // *** categories
-        $shpt_categories_color_value = get_option( 'shpt-categories-color', 'black' );
-        $shpt_categories_fontsize_value = get_option( 'shpt-categories-fontsize');
-        $shpt_categories_fontfamilly_value = get_option( 'shpt-categories-fontfamilly', 'roboto' );
+        $dyptt_categories_color_value = get_option( 'dyptt-categories-color', 'black' );
+        $dyptt_categories_fontsize_value = get_option( 'dyptt-categories-fontsize');
+        $dyptt_categories_fontfamilly_value = get_option( 'dyptt-categories-fontfamilly', 'roboto' );
         // *** tags
-        $shpt_tags_color_value = get_option( 'shpt-tags-color', 'black' );
-        $shpt_tags_fontsize_value = get_option( 'shpt-tags-fontsize');
-        $shpt_tags_fontfamilly_value = get_option( 'shpt-tags-fontfamilly', 'roboto' );
+        $dyptt_tags_color_value = get_option( 'dyptt-tags-color', 'black' );
+        $dyptt_tags_fontsize_value = get_option( 'dyptt-tags-fontsize');
+        $dyptt_tags_fontfamilly_value = get_option( 'dyptt-tags-fontfamilly', 'roboto' );
         // *** weight
-        $shpt_weight_color_value = get_option( 'shpt-weight-color', 'black' );
-        $shpt_weight_fontsize_value = get_option( 'shpt-weight-fontsize');
-        $shpt_weight_fontfamilly_value = get_option( 'shpt-weight-fontfamilly', 'roboto' );
+        $dyptt_weight_color_value = get_option( 'dyptt-weight-color', 'black' );
+        $dyptt_weight_fontsize_value = get_option( 'dyptt-weight-fontsize');
+        $dyptt_weight_fontfamilly_value = get_option( 'dyptt-weight-fontfamilly', 'roboto' );
         // *** dimensions
-        $shpt_dimensions_color_value = get_option( 'shpt-dimensions-color', 'black' );
-        $shpt_dimensions_fontsize_value = get_option( 'shpt-dimensions-fontsize');
-        $shpt_dimensions_fontfamilly_value = get_option( 'shpt-dimensions-fontfamilly', 'roboto' );
+        $dyptt_dimensions_color_value = get_option( 'dyptt-dimensions-color', 'black' );
+        $dyptt_dimensions_fontsize_value = get_option( 'dyptt-dimensions-fontsize');
+        $dyptt_dimensions_fontfamilly_value = get_option( 'dyptt-dimensions-fontfamilly', 'roboto' );
         // *** stock
-        $shpt_stock_color_value = get_option( 'shpt-stock-color', 'black' );
-        $shpt_stock_fontsize_value = get_option( 'shpt-stock-fontsize');
-        $shpt_stock_fontfamilly_value = get_option( 'shpt-stock-fontfamilly', 'roboto' );
+        $dyptt_stock_color_value = get_option( 'dyptt-stock-color', 'black' );
+        $dyptt_stock_fontsize_value = get_option( 'dyptt-stock-fontsize');
+        $dyptt_stock_fontfamilly_value = get_option( 'dyptt-stock-fontfamilly', 'roboto' );
         // *** sku
-        $shpt_sku_color_value = get_option( 'shpt-sku-color', 'black' );
-        $shpt_sku_fontsize_value = get_option( 'shpt-sku-fontsize');
-        $shpt_sku_fontfamilly_value = get_option( 'shpt-sku-fontfamilly', 'roboto' );
+        $dyptt_sku_color_value = get_option( 'dyptt-sku-color', 'black' );
+        $dyptt_sku_fontsize_value = get_option( 'dyptt-sku-fontsize');
+        $dyptt_sku_fontfamilly_value = get_option( 'dyptt-sku-fontfamilly', 'roboto' );
         // *** date
-        $shpt_date_color_value = get_option( 'shpt-date-color', 'black' );
-        $shpt_date_fontsize_value = get_option( 'shpt-date-fontsize');
-        $shpt_date_fontfamilly_value = get_option( 'shpt-date-fontfamilly', 'roboto' );
+        $dyptt_date_color_value = get_option( 'dyptt-date-color', 'black' );
+        $dyptt_date_fontsize_value = get_option( 'dyptt-date-fontsize');
+        $dyptt_date_fontfamilly_value = get_option( 'dyptt-date-fontfamilly', 'roboto' );
         // *** slug
-        $shpt_slug_color_value = get_option( 'shpt-slug-color', 'black' );
-        $shpt_slug_fontsize_value = get_option( 'shpt-slug-fontsize');
-        $shpt_slug_fontfamilly_value = get_option( 'shpt-slug-fontfamilly', 'roboto' );
+        $dyptt_slug_color_value = get_option( 'dyptt-slug-color', 'black' );
+        $dyptt_slug_fontsize_value = get_option( 'dyptt-slug-fontsize');
+        $dyptt_slug_fontfamilly_value = get_option( 'dyptt-slug-fontfamilly', 'roboto' );
         // *** featured
-        $shpt_featured_color_value = get_option( 'shpt-featured-color', 'black' );
-        $shpt_featured_fontsize_value = get_option( 'shpt-featured-fontsize');
-        $shpt_featured_fontfamilly_value = get_option( 'shpt-featured-fontfamilly', 'roboto' );
+        $dyptt_featured_color_value = get_option( 'dyptt-featured-color', 'black' );
+        $dyptt_featured_fontsize_value = get_option( 'dyptt-featured-fontsize');
+        $dyptt_featured_fontfamilly_value = get_option( 'dyptt-featured-fontfamilly', 'roboto' );
         // *** reviews
-        $shpt_reviews_color_value = get_option( 'shpt-reviews-color', 'black' );
-        $shpt_reviews_fontsize_value = get_option( 'shpt-reviews-fontsize');
-        $shpt_reviews_fontfamilly_value = get_option( 'shpt-reviews-fontfamilly', 'roboto' );
+        $dyptt_reviews_color_value = get_option( 'dyptt-reviews-color', 'black' );
+        $dyptt_reviews_fontsize_value = get_option( 'dyptt-reviews-fontsize');
+        $dyptt_reviews_fontfamilly_value = get_option( 'dyptt-reviews-fontfamilly', 'roboto' );
         // *** shipping-class
-        $shpt_shippingclass_color_value = get_option( 'shpt-shipping-class-color', 'black' );
-        $shpt_shippingclass_fontsize_value = get_option( 'shpt-shipping-class-fontsize');
-        $shpt_shippingclass_fontfamilly_value = get_option( 'shpt-shipping-class-fontfamilly', 'roboto' );
+        $dyptt_shippingclass_color_value = get_option( 'dyptt-shipping-class-color', 'black' );
+        $dyptt_shippingclass_fontsize_value = get_option( 'dyptt-shipping-class-fontsize');
+        $dyptt_shippingclass_fontfamilly_value = get_option( 'dyptt-shipping-class-fontfamilly', 'roboto' );
         $html = "<style>
-        .shpt-price, .shpt-product-price{
-            color:{$shpt_price_color_value};
-            font-size:{$shpt_price_fontsize_value};
-            font-family:{$shpt_price_fontfamilly_value};
+        .dyptt-price, .dyptt-product-price{
+            color:{$dyptt_price_color_value};
+            font-size:{$dyptt_price_fontsize_value};
+            font-family:{$dyptt_price_fontfamilly_value};
         }
-        .shpt-categories, .shpt-product-categories{
-            color:{$shpt_categories_color_value};
-            font-size:{$shpt_categories_fontsize_value};
-            font-family:{$shpt_categories_fontfamilly_value};
+        .dyptt-categories, .dyptt-product-categories{
+            color:{$dyptt_categories_color_value};
+            font-size:{$dyptt_categories_fontsize_value};
+            font-family:{$dyptt_categories_fontfamilly_value};
         }
-        .shpt-tags, .shpt-product-tags{
-            color:{$shpt_tags_color_value};
-            font-size:{$shpt_tags_fontsize_value};
-            font-family:{$shpt_tags_fontfamilly_value};
+        .dyptt-tags, .dyptt-product-tags{
+            color:{$dyptt_tags_color_value};
+            font-size:{$dyptt_tags_fontsize_value};
+            font-family:{$dyptt_tags_fontfamilly_value};
         }
-        .shpt-weight, .shpt-product-weight{
-            color:{$shpt_weight_color_value};
-            font-size:{$shpt_weight_fontsize_value};
-            font-family:{$shpt_weight_fontfamilly_value};
+        .dyptt-weight, .dyptt-product-weight{
+            color:{$dyptt_weight_color_value};
+            font-size:{$dyptt_weight_fontsize_value};
+            font-family:{$dyptt_weight_fontfamilly_value};
         }
-        .shpt-dimensions, .shpt-product-dimensions{
-            color:{$shpt_dimensions_color_value};
-            font-size:{$shpt_dimensions_fontsize_value};
-            font-family:{$shpt_dimensions_fontfamilly_value};
+        .dyptt-dimensions, .dyptt-product-dimensions{
+            color:{$dyptt_dimensions_color_value};
+            font-size:{$dyptt_dimensions_fontsize_value};
+            font-family:{$dyptt_dimensions_fontfamilly_value};
         }
-        .shpt-stock, .shpt-product-stock{
-            color:{$shpt_stock_color_value};
-            font-size:{$shpt_stock_fontsize_value};
-            font-family:{$shpt_stock_fontfamilly_value};
+        .dyptt-stock, .dyptt-product-stock{
+            color:{$dyptt_stock_color_value};
+            font-size:{$dyptt_stock_fontsize_value};
+            font-family:{$dyptt_stock_fontfamilly_value};
         }
-        .shpt-sku, .shpt-product-sku{
-            color:{$shpt_sku_color_value};
-            font-size:{$shpt_sku_fontsize_value};
-            font-family:{$shpt_sku_fontfamilly_value};
+        .dyptt-sku, .dyptt-product-sku{
+            color:{$dyptt_sku_color_value};
+            font-size:{$dyptt_sku_fontsize_value};
+            font-family:{$dyptt_sku_fontfamilly_value};
         }
-        .shpt-date, .shpt-product-date{
-            color:{$shpt_date_color_value};
-            font-size:{$shpt_date_fontsize_value};
-            font-family:{$shpt_date_fontfamilly_value};
+        .dyptt-date, .dyptt-product-date{
+            color:{$dyptt_date_color_value};
+            font-size:{$dyptt_date_fontsize_value};
+            font-family:{$dyptt_date_fontfamilly_value};
         }
-        .shpt-price, .shpt-product-price{
-            color:{$shpt_price_color_value};
-            font-size:{$shpt_price_fontsize_value};
-            font-family:{$shpt_price_fontfamilly_value};
+        .dyptt-price, .dyptt-product-price{
+            color:{$dyptt_price_color_value};
+            font-size:{$dyptt_price_fontsize_value};
+            font-family:{$dyptt_price_fontfamilly_value};
         }
-        .shpt-slug, .shpt-product-slug{
-            color:{$shpt_slug_color_value};
-            font-size:{$shpt_slug_fontsize_value};
-            font-family:{$shpt_slug_fontfamilly_value};
+        .dyptt-slug, .dyptt-product-slug{
+            color:{$dyptt_slug_color_value};
+            font-size:{$dyptt_slug_fontsize_value};
+            font-family:{$dyptt_slug_fontfamilly_value};
         }
-        .shpt-reviews, .shpt-product-reviews{
-            color:{$shpt_reviews_color_value};
-            font-size:{$shpt_reviews_fontsize_value};
-            font-family:{$shpt_reviews_fontfamilly_value};
+        .dyptt-reviews, .dyptt-product-reviews{
+            color:{$dyptt_reviews_color_value};
+            font-size:{$dyptt_reviews_fontsize_value};
+            font-family:{$dyptt_reviews_fontfamilly_value};
         }
-        .shpt-shippingclass, .shpt-product-shippingclass{
-            color:{$shpt_shippingclass_color_value};
-            font-size:{$shpt_shippingclass_fontsize_value};
-            font-family:{$shpt_shippingclass_fontfamilly_value};
+        .dyptt-shippingclass, .dyptt-product-shippingclass{
+            color:{$dyptt_shippingclass_color_value};
+            font-size:{$dyptt_shippingclass_fontsize_value};
+            font-family:{$dyptt_shippingclass_fontfamilly_value};
         }
         ";
         $html .= '</style>';
         echo $html;
     }
 
-    public function shpt_settings_plugin_action_link($links, $file) {
+    public function dyptt_settings_plugin_action_link($links, $file) {
         if (plugin_basename(__FILE__) == $file) {
-            $shpt_settings_link = '<a href="' . admin_url('admin.php?page=get-display-product-taxoes') . '" target="_blank">' . esc_html__('Settings', 'text-domain') . '</a>';
-            array_push($links, $shpt_settings_link);
+            $dyptt_settings_link = '<a href="' . admin_url('admin.php?page=get-display-product-taxoes') . '" target="_blank">' . esc_html__('Settings', 'text-domain') . '</a>';
+            array_push($links, $dyptt_settings_link);
         }
         return $links;
     }
 
 	public function __construct() {
-		add_filter( 'plugin_action_links', [$this,'shpt_settings_plugin_action_link'], 10, 2 );
-		add_filter( 'whitelist_options', [$this,'shpt_plugin_settings_to_whitelist'] );
+		add_filter( 'plugin_action_links', [$this,'dyptt_settings_plugin_action_link'], 10, 2 );
+		add_filter( 'whitelist_options', [$this,'dyptt_plugin_settings_to_whitelist'] );
 		if (isset($_GET['page']) && $_GET['page'] === 'get-display-product-taxoes') {
-		    add_action('admin_enqueue_scripts', [$this, 'shpt_all_assets_for_the_admin']);
+		    add_action('admin_enqueue_scripts', [$this, 'dyptt_all_assets_for_the_admin']);
         }
-		add_action('admin_menu', [$this,'shpt_admin_menu_test']);
-		$shpt_sk_products_taxo = get_option( 'shpt-check-products-taxo-widget', 'off' );
-        if ( $shpt_sk_products_taxo == 'on' ) {
-            $selected_value = get_option('shpt-check-pagechack-taxo-widget');
-            $selected_position = get_option('shpt-check-position-taxo-widget');
+		add_action('admin_menu', [$this,'dyptt_admin_menu_test']);
+		$dyptt_sk_products_taxo = get_option( 'dyptt-check-products-taxo-widget', 'off' );
+        if ( $dyptt_sk_products_taxo == 'on' ) {
+            $selected_value = get_option('dyptt-check-pagechack-taxo-widget');
+            $selected_position = get_option('dyptt-check-position-taxo-widget');
             if($selected_value=='on'){ // Shop page
                 if($selected_position=='item_title'){
                     add_action('woocommerce_shop_loop_item_title', [$this, 'custom_content_before_add_to_cart_button'] );
@@ -318,7 +318,7 @@ class ClassShopProdTax {
                     add_action('woocommerce_after_add_to_cart_button', [$this, 'custom_content_before_add_to_cart_button'] ); // Single page
                 }
             }
-            add_action('wp_head', [$this, 'shpt_taxoes_styles'],99);
+            add_action('wp_head', [$this, 'dyptt_taxoes_styles'],99);
         }
 	}
 }

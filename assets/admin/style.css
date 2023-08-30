@@ -257,23 +257,23 @@ color: #333;
   -webkit-text-fill-color: transparent;
 }
 
-.shpt-controls {
+.dyptt-controls {
   margin-top: 15px;
 }
 
-.shpt-input {
+.dyptt-input {
   margin-bottom: 15px;
 }
 
-.shpt-input label {
+.dyptt-input label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.shpt-input input[type="text"],
-.shpt-input input[type="color"],
-.shpt-input select {
+.dyptt-input input[type="text"],
+.dyptt-input input[type="color"],
+.dyptt-input select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ddd;
@@ -282,29 +282,29 @@ color: #333;
   height: 50px;
 }
 
-.shpt-input p {
+.dyptt-input p {
   margin-top: 15px;
   font-size: 14px;
   color: #666;
 }
 
-.shpt-input select {
+.dyptt-input select {
   height: 50px;
 }
 
 /* Style the select dropdown arrow */
-.shpt-input select::-ms-expand {
+.dyptt-input select::-ms-expand {
   display: none;
 }
 
-.shpt-input select:focus {
+.dyptt-input select:focus {
   border-color: #3498db;
 }
 
 /* Customize select dropdown appearance */
-.shpt-input select option {
+.dyptt-input select option {
   font-family: inherit;
 }
-.shpt-controls p {
+.dyptt-controls p {
   color: #f78686;
 }
