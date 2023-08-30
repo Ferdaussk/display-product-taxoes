@@ -9,6 +9,7 @@
  * Text Domain: display-product-taxoes
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
+require_once ( plugin_dir_path(__FILE__) ) . '/dashboard/requires-check.php';
 final class FinalSHPTShop{
 	const VERSION = '1.0';
 	const MINIMUM_PHP_VERSION = '7.0';
@@ -17,6 +18,11 @@ final class FinalSHPTShop{
 		add_action( 'dyptt_init', array( $this, 'dyptt_loaded_textdomain' ) );
 		// dyptt_init Plugin
 		add_action( 'plugins_loaded', array( $this, 'dyptt_init' ) );
+		// For woocommerce install check
+		if ( ! did_action( 'woocommerce/loaded' ) ) {
+			add_action( 'admin_notices', 'dyptt_WooCommerce_register_required_plugins' );
+			return;
+		}
 	}
 
 	public function dyptt_loaded_textdomain() {
