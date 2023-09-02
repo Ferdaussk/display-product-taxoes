@@ -204,7 +204,7 @@ class ClassShopProdTax {
             font-size:{$dyptt_price_fontsize_value};
             font-family:{$dyptt_price_fontfamilly_value};
         }
-        .dyptt-categories, .dyptt-categories a, .dyptt-product-categories{
+        .dyptt-categories, .dyptt-categories a, .dyptt-categories a:hover, .dyptt-product-categories{
             color:{$dyptt_categories_color_value};
             font-size:{$dyptt_categories_fontsize_value};
             font-family:{$dyptt_categories_fontfamilly_value};
