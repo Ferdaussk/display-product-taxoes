@@ -195,16 +195,16 @@ class ClassShopProdTax {
         $dyptt_reviews_fontsize_value = get_option( 'dyptt-reviews-fontsize');
         $dyptt_reviews_fontfamilly_value = get_option( 'dyptt-reviews-fontfamilly', 'roboto' );
         // *** shipping-class
-        $dyptt_shippingclass_color_value = get_option( 'dyptt-shipping-class-color', 'black' );
-        $dyptt_shippingclass_fontsize_value = get_option( 'dyptt-shipping-class-fontsize');
-        $dyptt_shippingclass_fontfamilly_value = get_option( 'dyptt-shipping-class-fontfamilly', 'roboto' );
+        $dyptt_shippingclass_color_value = get_option( 'dyptt-shippingclass-color', 'black' );
+        $dyptt_shippingclass_fontsize_value = get_option( 'dyptt-shippingclass-fontsize');
+        $dyptt_shippingclass_fontfamilly_value = get_option( 'dyptt-shippingclass-fontfamilly', 'roboto' );
         $html = "<style>
         .dyptt-price, .dyptt-product-price{
             color:{$dyptt_price_color_value};
             font-size:{$dyptt_price_fontsize_value};
             font-family:{$dyptt_price_fontfamilly_value};
         }
-        .dyptt-categories, .dyptt-product-categories{
+        .dyptt-categories, .dyptt-categories a, .dyptt-product-categories{
             color:{$dyptt_categories_color_value};
             font-size:{$dyptt_categories_fontsize_value};
             font-family:{$dyptt_categories_fontfamilly_value};
@@ -248,6 +248,11 @@ class ClassShopProdTax {
             color:{$dyptt_slug_color_value};
             font-size:{$dyptt_slug_fontsize_value};
             font-family:{$dyptt_slug_fontfamilly_value};
+        }
+        .dyptt-featured, .dyptt-product-featured{
+            color:{$dyptt_featured_color_value};
+            font-size:{$dyptt_featured_fontsize_value};
+            font-family:{$dyptt_featured_fontfamilly_value};
         }
         .dyptt-reviews, .dyptt-product-reviews{
             color:{$dyptt_reviews_color_value};

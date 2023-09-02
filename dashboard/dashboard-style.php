@@ -85,10 +85,10 @@ $dyptt_reviews_color_value = get_option( 'dyptt-reviews-color', 'black' );
 $dyptt_reviews_fontsize_value = get_option( 'dyptt-reviews-fontsize');
 $dyptt_reviews_fontfamilly_value = get_option( 'dyptt-reviews-fontfamilly', 'roboto' );
 // *** shipping-class
-$dyptt_shippingclass_text_value = get_option( 'dyptt-shipping-class-text', 'Shipping Class: ' );
-$dyptt_shippingclass_color_value = get_option( 'dyptt-shipping-class-color', 'black' );
-$dyptt_shippingclass_fontsize_value = get_option( 'dyptt-shipping-class-fontsize');
-$dyptt_shippingclass_fontfamilly_value = get_option( 'dyptt-shipping-class-fontfamilly', 'roboto' );
+$dyptt_shippingclass_text_value = get_option( 'dyptt-shippingclass-text', 'Shipping Class: ' );
+$dyptt_shippingclass_color_value = get_option( 'dyptt-shippingclass-color', 'black' );
+$dyptt_shippingclass_fontsize_value = get_option( 'dyptt-shippingclass-fontsize');
+$dyptt_shippingclass_fontfamilly_value = get_option( 'dyptt-shippingclass-fontfamilly', 'roboto' );
 
 ?>
 <div class="admin-panel">
