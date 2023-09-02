@@ -50,7 +50,7 @@ $dyptt_weight_color_value = get_option( 'dyptt-weight-color', 'black' );
 $dyptt_weight_fontsize_value = get_option( 'dyptt-weight-fontsize');
 $dyptt_weight_fontfamilly_value = get_option( 'dyptt-weight-fontfamilly', 'roboto' );
 // *** dimensions
-$dyptt_dimensions_text_value = get_option( 'dyptt-dimensions-text', 'Price: ' );
+$dyptt_dimensions_text_value = get_option( 'dyptt-dimensions-text', 'Dimensions: ' );
 $dyptt_dimensions_color_value = get_option( 'dyptt-dimensions-color', 'black' );
 $dyptt_dimensions_fontsize_value = get_option( 'dyptt-dimensions-fontsize');
 $dyptt_dimensions_fontfamilly_value = get_option( 'dyptt-dimensions-fontfamilly', 'roboto' );
@@ -351,7 +351,7 @@ $dyptt_shippingclass_fontfamilly_value = get_option( 'dyptt-shipping-class-fontf
           </tr>
           <tr>
             <td class="taxo-align">
-              <label class="checker-label"><?php _e('Dimentions: ', 'display-product-taxoes'); ?></label>
+              <label class="checker-label"><?php _e('Dimensions: ', 'display-product-taxoes'); ?></label>
               <label class="checker-switch">
                 <input type="checkbox" name="dyptt-check-dimensions-taxo-widget" value="on" <?php echo checked( $dyptt_dimensions_taxo_value, 'on', false ); ?>>
               </label>

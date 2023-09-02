@@ -48,7 +48,7 @@ if(get_option( 'dyptt-check-dimensions-taxo-widget', 'off' ) == true){
     echo '</div>';
 }
 if(get_option( 'dyptt-check-stock-taxo-widget', 'off' ) == true){
-    $dyptt_status_text = get_option( 'dyptt-status-text', 'off' );
+    $dyptt_status_text = get_option( 'dyptt-stock-text', 'off' );
     $dyptt_stock_label = (get_option( 'dyptt-label-check-stock-taxo-widget', 'off' ) == true)?$dyptt_status_text:'';
     echo '<div class="dyptt-item dyptt-stock">'.esc_html__($dyptt_stock_label);
         echo '<span class="dyptt-product-stock"> ' . ( $product->is_in_stock() ? 'In Stock' : 'Out of Stock' ) . '</span>';
